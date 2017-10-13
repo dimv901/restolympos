@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="py.com.twisted_RestOlympos_war_1.0-SNAPSHOTPU" transaction-type="JTA">
+        <jta-data-source>java:app/RestOlymposDS</jta-data-source>
+        <exclude-unlisted-classes>false</exclude-unlisted-classes>
+        <properties>
+            <property name="eclipselink.target-server" value="Glassfish"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+            <property name="hibernate.cache.use.query_cache" value="false"/>
+            <property name="hibernate.cache.use.second_level_cache" value="false"/>
+            
+            <property name="hibernate.c3p0.max_size" value="100" />
+            <property name="hibernate.c3p0.min_size" value="0" />
+            <property name="hibernate.c3p0.acquire_increment" value="1" />
+            <property name="hibernate.c3p0.idle_test_period" value="300" />
+            <property name="hibernate.c3p0.max_statements" value="0" />
+            <property name="hibernate.c3p0.timeout" value="100" />
+        </properties> 
+    </persistence-unit>
+</persistence>
